@@ -3,6 +3,7 @@ require "auth.php";
 ?>
 <?php
 session_start();
+require_once 'connect.php';
 
 if ($_GET['do'] == 'logout') {
     unset($_SESSION['admin']);
@@ -222,7 +223,7 @@ if (!$_SESSION['admin']) {
 
 <?php
 $today = date("Y-m-d");
-$link = mysqli_connect("localhost", "a0458868_devdel", "1226591Qwer", "a0458868_devdel");
+$link = mysqli_connect($host, $user, $password, $database);
 $sql = 'SELECT * FROM events WHERE `adddate` = "' . $today . '"';
 $result = mysqli_query($link, $sql);
 ?>

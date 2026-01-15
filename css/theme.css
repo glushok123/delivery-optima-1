@@ -6,8 +6,11 @@
 *
 */
 body {
-    min-height: 101vh;
-    background-color: #8f658d;
+    min-height: 100vh;
+    background-color: #f5f7fb;
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #1f2937;
+    line-height: 1.6;
 }
 
 /*
