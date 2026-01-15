@@ -1,0 +1,325 @@
+
+#calendar {
+    min-height: 700px;
+    min-width: 375px;
+    position: relative;
+}
+
+.addevent {
+    background: #b8d580;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.addevent:hover {
+    background: #8daa50;
+}
+
+.adddeliveryform {
+    width: 100%;
+    display: block;
+    background: #fff;
+    padding: 10px;
+    position: absolute;
+}
+
+.days > li {
+    position: relative;
+}
+
+.adddeliveryform {
+    width: 200%;
+    display: block;
+    background: #fff;
+    padding: 10px;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.adddeliveryform > input, .adddeliveryform > textarea, select {
+    float: left;
+    width: 96%;
+    border: 1px solid #ccc;
+    margin: 2%;
+    border-radius: 2px;
+}
+
+.adddeliveryform > textarea {
+    outline: 0;
+    outline-offset: 0;
+
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.adddeliveryform > input[type="submit"] {
+    width: 50%;
+    width: 46%;
+    margin: 2%;
+}
+
+.adddeliveryform > textarea:focus, select {
+    outline: 0;
+    outline-offset: 0;
+    border: 1px solid #ccc;
+}
+
+.adddeliveryform > input[readonly], .adddeliveryform > input[readonly]:active, .adddeliveryform > input[readonly]:hover, .adddeliveryform > input[readonly]:focus {
+    background: none;
+    border: none;
+
+    outline: 0;
+    outline-offset: 0;
+    font-weight: 500;
+
+}
+
+input.adddelivery {
+    display: block;
+    border: 0;
+    background: #b8d580;
+    border-radius: 2px;
+    color: #fff;
+}
+
+input.canceladd {
+    display: block;
+    border: 0;
+    background: #ff6a6a;
+    border-radius: 2px;
+    color: #fff;
+}
+
+input.adddelivery:hover {
+    background: #a3ab4c;
+}
+
+input.canceladd:hover {
+    background: #db2b2b;
+}
+
+.adddeliveryform input {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.adddeliveryform .closeadddelivery {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 7px;
+    top: 14px;
+    opacity: .5;
+    cursor: pointer;
+    background: url(/img/bg_a_close.png) left top no-repeat;
+}
+
+.adddeliveryform .closeadddelivery:hover {
+    opacity: .8;
+}
+
+.login {
+    padding: 20px;
+    width: 325px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.login input {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.login input[type="submit"] {
+    width: 50%;
+}
+
+.login span {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+    display: block;
+
+}
+
+.infologin {
+    width: 325px;
+    margin: 20px auto 0;
+    background: #f00;
+    color: #fff;
+    padding: 10px;
+}
+
+.admin {
+    background: #ccc;
+}
+
+.Bagetnaya, .bagetnaya {
+    background: #d54c4c;
+}
+
+.Курьер, .курьер, .courier {
+    background: #000;
+}
+
+.Copymaster, .copymaster {
+    background: #369;
+}
+
+.Copyfast, .copyfast {
+    background: #7d2687;
+}
+
+.Optima1, .optima1 {
+    background: #6f734d;
+}
+
+.bagetarbat {
+    background: #939c00;
+}
+
+.copy-fast {
+    background: #00d0ff;
+}
+
+.optima {
+    background: #fa0;
+}
+
+.adddeliveryform a {
+    margin: 3%;
+}
+
+.saveblbut {
+    display: none;
+}
+
+.editblbut .adddelivery {
+    width: 60%;
+    float: left;
+    background: #e6c13b;
+}
+
+.editblbut input.adddelivery:hover {
+    background: #cda928;
+}
+
+.editblbut .canceladd {
+    width: 37%;
+    float: left;
+    margin-left: 3%;
+}
+
+.editblbut {
+    margin: 6px;
+}
+
+.saveblbut {
+    margin: 6px;
+}
+
+.saveblbut .saveelivery {
+    width: 60%;
+    float: left;
+    display: block;
+    border: 0;
+    background: #b8d580;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.saveblbut .saveelivery:hover {
+    background: #a3ab4c;
+}
+
+.saveblbut .canceledit {
+    width: 37%;
+    float: left;
+    margin-left: 3%;
+    display: block;
+    border: 0;
+    background: #ff6a6a;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.saveblbut .canceledit:hover {
+    background: #db2b2b;
+}
+
+h1 span {
+    font-size: 20px;
+    text-align: right;
+    float: right;
+    margin: .5em 0 0;
+
+}
+
+h1 span a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    /* line-height: 1em; */
+    /* line-height: 1em; */
+    height: 30px;
+    width: 90px;
+    display: block;
+    text-align: center;
+    line-height: 18px;
+    float: right;
+    margin-left: 10px;
+}
+
+h1 span a:hover {
+    opacity: .8;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.yanavi {
+    display: none;
+}
+
+.bagetbarricade {
+    background: #a981c7;
+}
+
+.bagetarbat {
+    background: #4363a1;
+}
+
+.copyfast {
+    background: #5fc9a9;
+}
+
+.bagetnaya {
+    background: #268f00;
+}
+
+@media only screen and (max-width: 767px) {
+    .adddeliveryform {
+        width: 90%;
+        left: 5%;
+    }
+
+    .days > li {
+        position: static;
+    }
+
+    .yanavi {
+        display: block;
+    }
+}
